@@ -82,4 +82,5 @@ production:
   <<: *default
   database: receta_production
   username: receta
-  password: <%= ENV['RECETA_DATABASE_PASSWORD'] %>
+  password: receta_pw
+#  password: <%= ENV['RECETA_DATABASE_PASSWORD'] %>
