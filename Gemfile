@@ -33,7 +33,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 
 # Simons additions
-gem 'sass', '3.2.19' 
+
+gem 'sass', '3.2.19'
+
+gem 'bower-rails'
 
 group :test, :development do
   gem "rspec-rails", "~> 2.0"
