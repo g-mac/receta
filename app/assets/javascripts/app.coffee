@@ -14,20 +14,20 @@ receta.config(['$routeProvider', 'flashProvider',
     flashProvider.infoClassnames.push("alert-info")
     flashProvider.successClassnames.push("alert-success")
 
-  $routeProvider
-  .when('/',
-    templateUrl: "index.html"
-    controller: 'RecipesController'
-  ).when('/recipes/new',
-    templateUrl: "form.html"
-    controller: 'RecipeController'
-  ).when('/recipes/:recipeId',
-    templateUrl: "show.html"
-    controller: 'RecipeController'
-  ).when('/recipes/:recipeId/edit',
-    templateUrl: "form.html"
-    controller: 'RecipeController'
-  )
+    $routeProvider
+    .when('/',
+      templateUrl: "index.html"
+      controller: 'RecipesController'
+    ).when('/recipes/new',
+      templateUrl: "form.html"
+      controller: 'RecipeController'
+    ).when('/recipes/:recipeId',
+      templateUrl: "show.html"
+      controller: 'RecipeController'
+    ).when('/recipes/:recipeId/edit',
+      templateUrl: "form.html"
+      controller: 'RecipeController'
+    )
 ])
 
 #recipes = [
